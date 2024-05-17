@@ -8,31 +8,42 @@
 </head>
 <body>
     <form id="salaryForm">
-        <label for="firstName">Name:</label>
+        <label for="firstName">First Name:</label>
         <input type="text" id="firstName" name="firstName" required>
-        <label for="lastNme">lastName:</label>
+        
+        <label for="lastName">Last Name:</label>
         <input type="text" id="lastName" name="lastName" required>
-        <label for="Age">Age:</label>
-        <input type="text" id="firstName" name="firstName" required>
-        <label for="firstName">Date of birth</label>
-        <input type="text" id="firstName" name="firstName" required>
-        <label for="firstName">gender:</label>
-        <input type="text" id="gender" name="gender" required>
-            <div>
-                <label for="checkbox">Title:</label>
-                <label for="checkbox">Miss</label>
-                <input type="checkbox">
-                <label for="checkbox">Mrs</label>
-                <input type="checkbox">
-                <label for="checkbox">Mr</label>
-                <input type="checkbox">
-                <label for="checkbox">Doctor</label>
-                <input type="checkbox">
-            </div>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        
+        <div>
+            <label for="title">Title:</label>
+            <input type="radio" id="miss" name="title" value="Miss">
+            <label for="miss">Miss</label>
+            
+            <input type="radio" id="mrs" name="title" value="Mrs">
+            <label for="mrs">Mrs</label>
+            
+            <input type="radio" id="mr" name="title" value="Mr">
+            <label for="mr">Mr</label>
+            
+            <input type="radio" id="doctor" name="title" value="Doctor">
+            <label for="doctor">Doctor</label>
         </div>
-
-
-
-
-
-
+        
+        <button type="submit">Submit</button>
+    </form>
+    
+    </body>
