@@ -42,8 +42,20 @@
             <input type="radio" id="doctor" name="title" value="Doctor">
             <label for="doctor">Doctor</label>
         </div>
-        
+        <label for="employed">Are you employed?</label>
+        <select id="employment" name="employed" required>
+            <option value=""></option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
         <button type="submit">Submit</button>
+
+        <div id="salary-field" style="display: none;">
+            <label for="Rate">Hourly Rate:</label>
+            <input type="text" id="rate" name="rate">
+            <label for="hoursworked">Total Hours worked:</label>
+            <input type="text" id="hours" name="totalhours">
+        </div>
     </form>
     
     </body>
